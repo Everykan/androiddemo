@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Everykan App</string>
+    <string name="ImagenLogoDescripcion">Logo Everykan</string>
+    <string name="DescripcionApp">Con esta app podrá.....</string>
+    <string name="descripcionapp">Con Everykan fideliza e impulsa tu negocio o marca
+Ponemos en tus manos un CRM y una maravillosa App</string>
+    <string name="botonizq">Me gusta</string>
+    <string name="botonder">No me gusta</string>
+</resources>
