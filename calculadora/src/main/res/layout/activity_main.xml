@@ -4,20 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3F51B5"
+    android:background="#161414"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="196dp"
+        android:layout_height="175dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="6dp"
         android:background="#6BC3CE"
         android:text="@string/pantallaresultado" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -33,7 +39,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/ocho"
             android:textSize="36sp" />
 
@@ -42,7 +47,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/nueve"
             android:textSize="36sp" />
 
@@ -51,14 +55,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scrollbarSize="4dp"
             android:text="@string/resta"
-            android:textSize="36sp"
-            tools:paddingLeft="10" />
+            android:textSize="36sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -66,7 +72,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/cuatro"
             android:textSize="36sp" />
 
@@ -75,7 +80,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/cinco"
             android:textSize="36sp" />
 
@@ -84,7 +88,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/seis"
             android:textSize="36sp" />
 
@@ -93,7 +96,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/division"
             android:textSize="36sp" />
 
@@ -102,6 +104,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="102dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -109,7 +113,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/uno"
             android:textSize="36sp" />
 
@@ -118,7 +121,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/decimal"
             android:textSize="36sp" />
 
@@ -127,7 +129,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/tres"
             android:textSize="36sp" />
 
@@ -136,7 +137,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/multiplicacion"
             android:textSize="36sp" />
     </LinearLayout>
@@ -144,6 +144,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:orientation="horizontal">
 
         <Button
@@ -151,8 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
-            android:text="0"
+            android:text="@string/cero"
             android:textSize="36sp" />
 
         <Button
@@ -160,8 +161,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
-            android:text="."
+            android:text="@string/decimal"
             android:textSize="36sp" />
 
         <Button
@@ -169,7 +169,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/resultado"
             android:textSize="36sp" />
 
@@ -178,7 +177,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="10"
             android:text="@string/suma"
             android:textSize="36sp" />
     </LinearLayout>
