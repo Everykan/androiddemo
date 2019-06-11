@@ -4,12 +4,13 @@ import android.content.SyncStatusObserver;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
     private Date fecha = new Date();
-
+    private TextView secondsDisplay;
 
     // monitorizar con un "policias"
     /*
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        secondsDisplay = (TextView) findViewById(R.id.segundos);
+
     }
 
     @Override
@@ -43,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
 
         long milisengundos = (new Date()).getTime() - fecha.getTime(); //
         StringBuilder sb = new StringBuilder();
-        sb.append(milisengundos/1000).append(" Segundos en 2do Plano");
+        sb.append(milisengundos/1000).append(" Segundos en segudo Plano");
+        secondsDisplay.setText(sb.toString());
+
     }
 }
