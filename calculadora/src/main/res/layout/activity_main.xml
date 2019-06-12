@@ -9,55 +9,46 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/display"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="12dp"
         android:layout_marginBottom="6dp"
         android:background="#6BC3CE"
-        android:text="@string/pantallaresultado" />
+        android:gravity="right"
+        android:text="@string/pantallaresultado"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        android:verticalScrollbarPosition="right" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button16"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="203dp"
+            android:layout_height="51dp"
             android:layout_weight="1"
-            android:text="@string/siete"
-            android:textSize="36sp" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Marca"
+            android:textColor="#F2F4F5"
+            android:textSize="30sp" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/borra"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/ocho"
-            android:textSize="36sp" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="@string/nueve"
-            android:textSize="36sp" />
-
-        <Button
-            android:id="@+id/button13"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:scrollbarSize="4dp"
-            android:text="@string/resta"
-            android:textSize="36sp" />
+            android:onClick="botonPulsado"
+            android:text="Borrar"
+            android:textSize="26sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,36 +59,90 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/boton7"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
+            android:text="@string/siete"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/boton8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="botonPulsado"
+            android:text="@string/ocho"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/boton9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="botonPulsado"
+            android:text="@string/nueve"
+            android:textSize="60sp" />
+
+        <Button
+            android:id="@+id/resta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFC107"
+            android:onClick="botonPulsado"
+            android:scrollbarSize="4dp"
+            android:shadowColor="#3F51B5"
+            android:singleLine="false"
+            android:text="@string/resta"
+            android:textSize="50sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/boton4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/cuatro"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/boton5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/cinco"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/boton6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/seis"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/division"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FFC107"
+            android:onClick="botonPulsado"
             android:text="@string/division"
-            android:textSize="36sp" />
+            android:textSize="50sp" />
 
     </LinearLayout>
 
@@ -109,36 +154,41 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/boton1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/uno"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/boton2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/dos"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/boton3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/tres"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/multiplica"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FFC107"
+            android:onClick="botonPulsado"
             android:text="@string/multiplicacion"
-            android:textSize="36sp" />
+            android:textSize="50sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -149,37 +199,44 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/boton0"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/cero"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/decimal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="botonPulsado"
             android:text="@string/decimal"
-            android:textSize="36sp" />
+            android:textSize="60sp"
+            android:visibility="visible" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/igual"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FF5722"
+            android:onClick="botonPulsado"
             android:text="@string/resultado"
-            android:textSize="36sp" />
+            android:textSize="60sp" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/suma"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#FFC107"
             android:clickable="true"
+            android:onClick="botonPulsado"
             android:text="@string/suma"
-            android:textSize="36sp" />
+            android:textSize="50sp" />
     </LinearLayout>
 
 </LinearLayout>
