@@ -225,7 +225,7 @@
             android:background="#FF5722"
             android:onClick="botonPulsado"
             android:text="@string/resultado"
-            android:textSize="60sp" />
+            android:textSize="50sp" />
 
         <Button
             android:id="@+id/suma"

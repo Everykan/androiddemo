@@ -11,11 +11,11 @@
     <string name="ocho">8</string>
     <string name="nueve">9</string>
     <string name="resta">-</string>
-    <string name="division">/</string>
-    <string name="multiplicacion">X</string>
     <string name="suma">+</string>
-    <string name="resultado">=</string>
     <string name="decimal">.</string>
     <string name="pantallaresultado" />
     <string name="cero">0</string>
+    <string name="multiplicacion">×</string>
+    <string name="division">÷</string>
+    <string name="resultado">=</string>
 </resources>

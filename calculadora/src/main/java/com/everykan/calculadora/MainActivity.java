@@ -12,19 +12,18 @@ public class MainActivity extends AppCompatActivity {
     private double valor = 0.0;
     private TextView textView;
     String valor1 = "";
-    int cifra = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = (TextView) findViewById(R.id.display);
-        textView.setText( valor + "" );
+        textView.setText(valor + "");
     }
 
     public void botonPulsado(View view) {
 
-        int cifra = 0;
+        int cifra = -1;
         String accion = "";
         String calcula = "";
         int valor2 = 0;
@@ -90,18 +89,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (cifra >= 0) {
-
             valor1 = valor1 + (String.valueOf(cifra));
-            textView.setText(valor1 + ".00");
-
+            textView.setText(valor1);
         }
 
         switch (accion) {
-
             // control = 0;
-
+            case "decimal":
+                Log.d("ENTRO EN ***********","entro en decimal " + valor1);
+                valor1 = valor1 + ".";
+                textView.setText(valor1);
+                break;
             case "borrar":
-                resetearValores();
+                Log.d("ENTRO EN ***********","entro en borrar " );
+                valor1 = "";
+                //resetearValores();
                 textView.setText(valor1);
                 break;
             case "sumar":
@@ -121,12 +123,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void resetearValores(){
+ /* private void resetearValores(){
         valor1 = "";
         cifra = 0;
-
-    }
-
+    } */
 
 }
 
