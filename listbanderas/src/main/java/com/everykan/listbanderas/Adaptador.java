@@ -1,4 +1,4 @@
-package com.everykan.listviewpersonalizado;
+package com.everykan.listbanderas;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -20,7 +20,7 @@ public class Adaptador extends BaseAdapter {
     private String[][] datos;
     private int[] datosImg;
 
-    public Adaptador (Context contexto, String[][] datos, int[] imagenes) {
+    public Adaptador(Context contexto, String[][] datos, int[] imagenes) {
 
         this.contexto = contexto;
         this.datos = datos;
@@ -29,7 +29,6 @@ public class Adaptador extends BaseAdapter {
         inflater = (LayoutInflater)contexto.getSystemService(contexto.LAYOUT_INFLATER_SERVICE);
 
     }
-
 
     /**
      * How many items are in the data set represented by this Adapter.
@@ -51,24 +50,19 @@ public class Adaptador extends BaseAdapter {
         return 0;
     }
 
-
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
 
-        final View vista = inflater.inflate(R.layout.elemento_lista, null);
+        final View vista = inflater.inflate(R.layout.elemento_fila, null);
 
-        TextView titulo = (TextView) vista.findViewById(R.id.idTitulo);
-        TextView duracion = (TextView) vista.findViewById(R.id.idDuracion);
-        TextView director = (TextView) vista.findViewById(R.id.idDirector);
-
-        ImageView imagen = (ImageView) vista.findViewById(R.id.idImagen);
-        RatingBar calificacion = (RatingBar) vista.findViewById(R.id.idRatingBarPel);
+        TextView nombre = (TextView) vista.findViewById(R.id.idnonpais);
+        TextView continente = (TextView) vista.findViewById(R.id.idcontinente);
+        ImageView imagen = (ImageView) vista.findViewById(R.id.idbandera);
 
         // ahora colocamos los datos en estas vistas (views)...
 
-        titulo.setText(datos[i][0]);
-        director.setText(datos[i][1]);
-
+        nombre.setText(datos[i][0]);
+        continente.setText(datos[i][1]);
         imagen.setImageResource(datosImg[i]);
 
         // cuando hagamos clic en la el item y veamos la ficha

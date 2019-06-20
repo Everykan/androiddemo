@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lista = (ListView) findViewById(R.id.klista);
-        Adaptador adpatador = new Adaptador(this, datos, datosImg);
-        lista.setAdapter(adpatador);
+        Adaptador adaptador = new Adaptador(this, datos, datosImg);
+        lista.setAdapter(adaptador);
 
     }
 }
