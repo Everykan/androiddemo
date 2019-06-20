@@ -3,14 +3,14 @@
 
     // Modelo agente
 
-    <string name="codigoa">Código:</string>
+    <string name="codigo">Código:</string>
     <string name="nombre">Nombre:</string>
     <string name="apellido1">Apellido 1:</string>
     <string name="apellido2">Apellido 2:</string>
 
     // Modelo Multa
 
-    <string name="codigom">Código:</string>
+    <string name="codigo">Código:</string>
     <string name="fechaHora">Fecha/Hora:</string>
     <string name="agente">Agente:</string>
     <string name="motivo">Motivo:</string>

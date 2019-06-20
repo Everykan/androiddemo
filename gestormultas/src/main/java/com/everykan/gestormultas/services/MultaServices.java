@@ -2,8 +2,8 @@ package com.everykan.gestormultas.services;
 
 import java.util.List;
 
-import com.pgrsoft.gestionmultas.model.Agente;
-import com.pgrsoft.gestionmultas.model.Multa;
+import com.everykan.gestormultas.model.Agente;
+import com.everykan.gestormultas.model.Multa;
 
 public interface MultaServices {
 
