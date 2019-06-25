@@ -1,1 +1,1 @@
-include ':app', ':calculadora', ':simplelistview', ':listviewpersonalizado', ':listbanderas', ':lecturamedica', ':gestormultas'
+include ':app', ':calculadora', ':simplelistview', ':listviewpersonalizado', ':listbanderas', ':lecturamedica', ':gestormultas', ':sqlitehelloword'

@@ -2,4 +2,8 @@
     <string name="app_name">RegMedical</string>
     <string name="titulo1">RegMedical</string>
     <string name="clic">https://everykan.com/</string>
+    <string name="next">Siguiente</string>
+    <string name="volver">Volver</string>
+    <string name="nextlectura">siguiente</string>
+    <string name="exitlectura">Volver</string>
 </resources>
