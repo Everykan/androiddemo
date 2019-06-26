@@ -6,4 +6,10 @@
     <string name="volver">Volver</string>
     <string name="nextlectura">siguiente</string>
     <string name="exitlectura">Volver</string>
+    <string name="fecha">Fecha :</string>
+    <string name="hora">Hora :</string>
+    <string name="peso">Peso:</string>
+    <string name="diastolica">Diastólica:</string>
+    <string name="sistolica">Sistólica:</string>
+    <string name="titulo">Nueva Lectura</string>
 </resources>

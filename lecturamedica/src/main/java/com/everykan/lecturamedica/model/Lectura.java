@@ -14,7 +14,7 @@ public class Lectura implements Serializable {
     private Integer codigo;
     private Date fechaHora;
     private double peso;
-    private double distolica;
+    private double diastolica;
     private double sistolica;
     private double longitud;
     private double latitud;
@@ -23,20 +23,20 @@ public class Lectura implements Serializable {
 
     }
 
-    public Lectura(Date fechaHora, double peso, double distolica, double sistolica) {
+    public Lectura(Date fechaHora, double peso, double diastolica, double sistolica) {
 
         this.fechaHora = fechaHora;
         this.peso = peso;
-        this.distolica = distolica;
+        this.diastolica = diastolica;
         this.sistolica = sistolica;
 
     }
 
-    public Lectura(Date fechaHora, double peso, double distolica, double sistolica, double longitud, double latitud) {
+    public Lectura(Date fechaHora, double peso, double diastolica, double sistolica, double longitud, double latitud) {
 
         this.fechaHora = fechaHora;
         this.peso = peso;
-        this.distolica = distolica;
+        this.diastolica = diastolica;
         this.sistolica = sistolica;
         this.longitud = longitud;
         this.latitud = latitud;
@@ -69,12 +69,12 @@ public class Lectura implements Serializable {
         this.peso = peso;
     }
 
-    public double getDistolica() {
-        return distolica;
+    public double getDiastolica() {
+        return diastolica;
     }
 
-    public void setDistolica(double distolica) {
-        this.distolica = distolica;
+    public void setDiastolica(double distolica) {
+        this.diastolica = distolica;
     }
 
     public double getSistolica() { return sistolica; }
@@ -101,7 +101,9 @@ public class Lectura implements Serializable {
 
     @Override
     public boolean equals(Object o) {
+
         if (this == o) return true;
+
         if (o == null || getClass() != o.getClass()) return false;
 
         Lectura lectura = (Lectura) o;
@@ -121,11 +123,12 @@ public class Lectura implements Serializable {
                 "codigo=" + codigo +
                 ", fechaHora=" + fechaHora +
                 ", peso=" + peso +
-                ", distolica=" + distolica +
+                ", diastolica=" + diastolica +
                 ", sistolica=" + sistolica +
                 ", longitud=" + longitud +
                 ", latitud=" + latitud +
                 '}';
 
     }
+
 }

@@ -10,7 +10,7 @@ public interface LecturaServices {
     public Lectura update(Lectura lectura);
     public boolean delete(Integer codigo);
 
-
+    // la lista de objetos de clase Lectura
     public List<Lectura> getAll();
     public List<Lectura> getBetweenDates(Date fecha1, Date fecha2);
 
