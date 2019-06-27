@@ -34,8 +34,6 @@ public class FormularioActivity extends AppCompatActivity {
 
                 // 1.- Recoger los valores de los TextEdit
 
-
-
                 // 2.- Instanciar con esos valores una lectura
 
                 Lectura lectura = new Lectura();
@@ -46,6 +44,8 @@ public class FormularioActivity extends AppCompatActivity {
                 lectura.setFechaHora(new Date());
 
                 Log.d("****","Vamos a guardar la lectura: " + lectura.toString());
+
+
 
                 // 3.- Guardar la lectura en la base de datos
                 // 4.- A través de un Intent cambiar de Activity para mostrar el listado

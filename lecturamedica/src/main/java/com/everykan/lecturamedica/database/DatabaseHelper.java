@@ -32,7 +32,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final SimpleDateFormat SDF = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
     public DatabaseHelper(Context context) {
+
         super(context,DATABASE_NAME, null, 2);
+
     }
 
     @Override
@@ -41,6 +43,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // Aquí hay DDL y también DML (si queremos que hayan datos en las tablas)
 
         StringBuilder sb = new StringBuilder();
+
         sb.append("CREATE TABLE " + LECTURAS_TABLE + " (")
           .append(COL_0).append(" INTEGER PRIMARY KEY AUTOINCREMENT, ")
           .append(COL_1).append(" TEXT NOT NULL, ")
@@ -72,12 +75,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // Métodos para se consumidos por otras clases.
 
-    public Lectura createLectura(double peso,
-                              double diastoloca,
-                              double sistoloca,
-                              Date fechaHora,
-                              double longitud,
-                              double latitud){
+    public Lectura createLectura(
+            double peso,
+            double diastoloca,
+            double sistoloca,
+            Date fechaHora,
+            double longitud,
+            double latitud){
+
         // TODO
         return null;
     }
@@ -118,8 +123,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         Lectura lectura = null;
 
-        if (cursor != null && cursor.getCount() > 0){   // Sabemos que hay 1 registro!
-            cursor.moveToNext();                        // Situamos el puntero en ese registro
+        // usamos ese if para saber si que hay al menos 1 registro!
+
+        if (cursor != null && cursor.getCount() > 0){
+            // Si entramos acá sabemos que hay 1 registro!
+
+            // Situamos el puntero en ese registro  -> cursor.moveToNext()
+            cursor.moveToNext();
+
             int code = cursor.getInt(0);
             Date fecha = getDateFromString(cursor.getString(1));
             double peso = cursor.getDouble(2);
