@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.everykan.lecturamedica.model.Lectura;
 import com.everykan.lecturamedica.model.LecturaServices;
 import com.everykan.lecturamedica.model.LecturaServicesImpl;
+import com.everykan.lecturamedica.model.LecturaServicesSQLite;
 
 import java.text.SimpleDateFormat;
 import java.util.List;

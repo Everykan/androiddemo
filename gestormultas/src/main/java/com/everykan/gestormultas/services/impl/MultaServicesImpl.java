@@ -7,10 +7,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import com.pgrsoft.gestionmultas.model.Agente;
-import com.pgrsoft.gestionmultas.model.Multa;
-import com.pgrsoft.gestionmultas.model.Tipo;
-import com.pgrsoft.gestionmultas.services.MultaServices;
+import com.everykan.gestormultas.model.Agente;
+import com.everykan.gestormultas.model.Multa;
+import com.everykan.gestormultas.model.Tipo;
+import com.everykan.gestormultas.services.MultaServices;
+
 
 public class MultaServicesImpl implements MultaServices {
 
