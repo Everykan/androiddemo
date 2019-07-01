@@ -16,14 +16,14 @@
     </fragment>
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center">
 
         <ImageView
-            android:layout_width="600dp"
-            android:layout_height="600dp"
-            android:src="@drawable/usuarios"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/usuarios" />
 
     </RelativeLayout>
 

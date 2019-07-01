@@ -7,4 +7,19 @@
     android:orientation="vertical"
     tools:context=".DestActivity">
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:name="com.everykan.fragmentshelloworld.MenuFragment"
+        tools:layout="@layout/fragment_menu">
+    </fragment>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/destino">
+
+    </RelativeLayout>
 </LinearLayout>
