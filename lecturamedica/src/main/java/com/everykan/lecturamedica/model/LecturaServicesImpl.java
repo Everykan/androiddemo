@@ -94,7 +94,9 @@ public class LecturaServicesImpl implements LecturaServices {
     }
 
     public static LecturaServicesImpl getInstance(){
+
         return INSTANCE;
+
     }
 
     @Override
@@ -109,7 +111,9 @@ public class LecturaServicesImpl implements LecturaServices {
 
     @Override
     public Lectura read(Integer codigo) {
+
         return LECTURAS.get(codigo);
+
     }
 
     @Override

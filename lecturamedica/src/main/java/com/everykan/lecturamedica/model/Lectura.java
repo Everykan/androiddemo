@@ -4,6 +4,8 @@ package com.everykan.lecturamedica.model;
 // objeto serializable, es un objeto que puede abandonar la memoria
 // para poder enviarse en la red via ftp, convertirse en un valor...
 
+import android.util.Log;
+
 import java.io.Serializable;
 import java.util.Date;
 

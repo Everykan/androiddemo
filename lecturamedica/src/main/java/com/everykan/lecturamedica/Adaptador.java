@@ -31,9 +31,7 @@ public class Adaptador extends BaseAdapter {
         inflater = (LayoutInflater) contexto.getSystemService(contexto.LAYOUT_INFLATER_SERVICE);
 
      //              INTERFACE                  IMPLEMENTACION
-        LecturaServices lecturaServices = LecturaServicesImpl.getInstance(); //lecturaServices es lo que llamo "aparato de hacer cosas"
-
-    //  LecturaServices lecturaServices = new LecturaServicesSQLite(contexto);
+        LecturaServices lecturaServices = new LecturaServicesSQLite(contexto);
 
         lecturas = lecturaServices.getAll(); // obtenemos la lista de lecturas List<Lectura>
 
@@ -61,7 +59,7 @@ public class Adaptador extends BaseAdapter {
 
         Lectura lectura = lecturas.get(position);
 
-        // m1 convierto string con la parte extraida de sdf1 y sdf2
+        // m1 convierto a string con la parte extraida de sdf1 y sdf2
 
         String strFecha = sdf1.format(lectura.getFechaHora());
         String strHora =  sdf2.format(lectura.getFechaHora());
@@ -75,7 +73,7 @@ public class Adaptador extends BaseAdapter {
         return vista;
 
         // Otra forma de hacerlo sin utilizar el lectura_row.xml
-        // ques es creando el layout y las diferentes views de forma programática
+        // es creando el layout y las diferentes views de forma programática
         // en Java, lo cual ES UNA LOCURA! aunque se puede conseguir EXACTAMENTE lo mismo
 
        /*
