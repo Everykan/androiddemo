@@ -14,9 +14,7 @@ import android.widget.ImageButton;
 public class MenuFragment extends Fragment {
 
     // referencias a los tres botones
-    private final int[] BOTONES_MENU = {R.id.boton1,
-            R.id.boton2,
-            R.id.boton3};
+    private final int[] BOTONES_MENU = {R.id.boton1, R.id.boton2, R.id.boton3};
 
     public MenuFragment() {
 
@@ -33,8 +31,9 @@ public class MenuFragment extends Fragment {
 
         // Declaro una variable del tipo ImageButton
         // Vamos a iterar todos y cada  uno de los botones y en cada vuelta
-        // del for añadiremos un listener al botón de turno.
-        // (el "botón de turno" es botonMenu
+        // del for y añadiremos un listener al botón de turno.
+        // el "botón de turno" es botonMenu
+
         ImageButton botonMenu;
 
         // para cada botón...
