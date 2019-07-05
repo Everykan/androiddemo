@@ -1,6 +1,8 @@
 package com.everykan.resthelloworld2.model;
 
 
+import com.google.gson.annotations.SerializedName;
+
 public class Camarero {
 
     @SerializedName("codigo")

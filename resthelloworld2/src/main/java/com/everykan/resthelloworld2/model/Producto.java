@@ -1,33 +1,30 @@
 package com.everykan.resthelloworld2.model;
 
+import java.util.Date;
+
 public class Producto {
 
-    private int codigo;
+    private long codigo;
     private String nombre;
     private double precio;
+    private boolean descatalogado;
     private String descripcion;
+    private Date fechaAlta;
 
     /*
-    [#/definitions/ProductoVOProductoVO{
-categoria	string
-codigo	long
-descatalogado	boolean
-descripcion	string
-fechaAlta	Date
-nombre	string
-precio	double
-}]
-     */
+    codigo	long
+    descatalogado	boolean
+    descripcion	string
+    fechaAlta	Date
+    nombre	string
+    precio	double
+    */
 
-    public Producto(){
-
-    }
-
-    public int getCodigo() {
+    public long getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(long codigo) {
         this.codigo = codigo;
     }
 
@@ -47,6 +44,14 @@ precio	double
         this.precio = precio;
     }
 
+    public boolean isDescatalogado() {
+        return descatalogado;
+    }
+
+    public void setDescatalogado(boolean descatalogado) {
+        this.descatalogado = descatalogado;
+    }
+
     public String getDescripcion() {
         return descripcion;
     }
@@ -55,13 +60,24 @@ precio	double
         this.descripcion = descripcion;
     }
 
+    public Date getFechaAlta() {
+        return fechaAlta;
+    }
+
+    public void setFechaAlta(Date fechaAlta) {
+        this.fechaAlta = fechaAlta;
+    }
+
     @Override
     public String toString() {
         return "Producto{" +
                 "codigo=" + codigo +
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +
+                ", descatalogado=" + descatalogado +
                 ", descripcion='" + descripcion + '\'' +
+                ", fechaAlta=" + fechaAlta +
                 '}';
     }
 }
+
