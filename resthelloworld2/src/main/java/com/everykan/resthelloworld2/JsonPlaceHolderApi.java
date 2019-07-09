@@ -20,5 +20,4 @@ public interface JsonPlaceHolderApi {
     @GET("pedidos")
     Call<List<LineaPedido>> getPedidos();
 
-
 }

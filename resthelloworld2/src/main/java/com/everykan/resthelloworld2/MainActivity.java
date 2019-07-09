@@ -1,12 +1,10 @@
 package com.everykan.resthelloworld2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 // listener
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,16 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         botonPedido.setOnClickListener(this);
         botonProducto.setOnClickListener(this);
 
-        // ver que boton se ha picado para saber que View vamos a usar
-
-
-        // textViewResult = (TextView) findViewById(R.id.text_view_result);
-
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://jsonplaceholder.typicode.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
+        //textViewResult = (TextView) findViewById(R.id.text_view_result);
+        //Retrofit retrofit = new Retrofit.Builder()
+        //        .baseUrl("https://pedi-gest.herokuapp.com/api/")
+        //        .addConverterFactory(GsonConverterFactory.create())
+        //        .build();
         // jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
 
     }
@@ -45,13 +38,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        // Log.d("******* ",v.getTag().toString());
         // dependiendo del boton
         // crear un intend y hacemos startActivity
 
+        Intent intent = null;
 
+        switch (v.getTag().toString()) {
 
-        // crear los activity
+            case "1":
+
+                intent = new Intent(this, CamareroActivity.class);
+                break;
+
+            case "2":
+
+                break;
+
+            case "3":
+
+                break;
+        }
+
+        startActivity(intent);
 
     }
 }

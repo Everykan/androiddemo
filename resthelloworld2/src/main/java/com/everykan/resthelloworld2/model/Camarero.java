@@ -1,6 +1,6 @@
 package com.everykan.resthelloworld2.model;
 
-import com.google.gson.annotations.SerializedName;
+import com.google.gson.annotations.SerializedName; // gson convierte java <---> JSON
 
 public class Camarero {
 
@@ -27,6 +27,8 @@ public class Camarero {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+
 
     @Override
     public String toString() {
