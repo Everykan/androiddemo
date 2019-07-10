@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Producto {
 
+    private String categoria;
     private long codigo;
     private String nombre;
     private double precio;
@@ -11,14 +12,13 @@ public class Producto {
     private String descripcion;
     private Date fechaAlta;
 
-    /*
-    codigo	long
-    descatalogado	boolean
-    descripcion	string
-    fechaAlta	Date
-    nombre	string
-    precio	double
-    */
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 
     public long getCodigo() {
         return codigo;
@@ -71,7 +71,8 @@ public class Producto {
     @Override
     public String toString() {
         return "Producto{" +
-                "codigo=" + codigo +
+                "categoria='" + categoria + '\'' +
+                ", codigo=" + codigo +
                 ", nombre='" + nombre + '\'' +
                 ", precio=" + precio +
                 ", descatalogado=" + descatalogado +

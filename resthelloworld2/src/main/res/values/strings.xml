@@ -3,4 +3,5 @@
     <string name="camarero">camareros</string>
     <string name="productos">productos</string>
     <string name="pedidos">pedidos</string>
+    <string name="title_activity_producto">ProductoActivity</string>
 </resources>
