@@ -1,7 +1,7 @@
 package com.everykan.resthelloworld2;
 
 import com.everykan.resthelloworld2.model.Camarero;
-import com.everykan.resthelloworld2.model.LineaPedido;
+import com.everykan.resthelloworld2.model.Pedido;
 import com.everykan.resthelloworld2.model.Producto;
 
 import java.util.List;
@@ -18,6 +18,10 @@ public interface JsonPlaceHolderApi {
     Call<List<Producto>> getProductos();
 
     @GET("pedidos")
-    Call<List<LineaPedido>> getPedidos();
+    Call<List<Pedido>> getPedidos();
+
+ //   @GET("lineas")
+ //   Call<List<LineaPedido>> getLineasPedido();
+
 
 }

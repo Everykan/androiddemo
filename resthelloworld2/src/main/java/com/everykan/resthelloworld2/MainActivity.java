@@ -26,13 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         botonPedido.setOnClickListener(this);
         botonProducto.setOnClickListener(this);
 
-        //textViewResult = (TextView) findViewById(R.id.text_view_result);
-        //Retrofit retrofit = new Retrofit.Builder()
-        //        .baseUrl("https://pedi-gest.herokuapp.com/api/")
-        //        .addConverterFactory(GsonConverterFactory.create())
-        //        .build();
-        // jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
-
     }
 
     @Override
@@ -52,10 +45,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case "2":
 
+                intent = new Intent(this, ProductoActivity.class);
                 break;
 
             case "3":
 
+                intent = new Intent(this, PedidoActivity.class);
                 break;
         }
 
