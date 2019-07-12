@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Medikdata</string>
+    <string name="Titulo_Lecturas">LECTURAS</string>
+    <string name="bObtener">Obtener Lecturas</string>
+    <string name="bCrear">Crear Lecturas</string>
+    <string name="CrearLectura">Guardar Lectura</string>
+    <string name="TituloFormulario">Formulario Lecturas</string>
+    <string name="diastolica">Diastólica</string>
+    <string name="sistolica">Sistólica</string>
+    <string name="peso">Peso</string>
+    <string name="longitud">Longitud</string>
+    <string name="latitud">Latitud</string>
+</resources>

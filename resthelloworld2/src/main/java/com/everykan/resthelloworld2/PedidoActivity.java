@@ -99,7 +99,7 @@ public class PedidoActivity extends AppCompatActivity {
                     List<LineaPedido> lineasPedido = pedido.getLineasPedido();
 
                     for (LineaPedido lineaPedido : lineasPedido) {
-
+                        // con esto he colocado en el content
                         content += "Producto : " + lineaPedido.getProducto().getNombre() + "\n\n";
 
 
